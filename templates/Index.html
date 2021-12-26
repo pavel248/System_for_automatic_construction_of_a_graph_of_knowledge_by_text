@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/project.css') }}">
+</head>
+<body>
+    <header class ="main_header"> 
+        <div class ="container">
+            <div class ="logo">
+                <img src ="/static/images/logo.png" width ="80" heigh ="80">
+            </div>
+            <div class ="team_name">
+                <p>Teen Spirit</p>
+            </div>          
+            <div class = "main_menu">
+                <img src ="/static/images/menu.png" width ="60" heigh ="60">
+            </div>
+        </div>
+    </header>
+
+    <div class ="main_block">
+        <div class ="sub_menu"> 
+            <ul>
+                <li><img src ="/static/images/m1.png" width ="30" heigh ="30"><a href="#1">Главная страница</a></li>
+                <li><img src ="/static/images/m2.png" width ="30" heigh ="30"><a href="#2">О нас</li>
+                <li><img src ="/static/images/m3.png" width ="30" heigh ="30"><a href="#3">Язык</a></li>
+                <li><img src ="/static/images/m4.png" width ="30" heigh ="30"><a href="#4">Поддрежка</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <form class="text_form" action="" method="post">
+                <textarea type="text" name ="user_text" placeholder="Вставьте ваш текст сюда"></textarea>         
+                <input type="submit" value="Submit">
+            </form>           
+                        
+        </div>
+    </div>
+
+    <div class="main_footer">
+        <div class="container">
+            <p>© Teen Spirit inc 2021</p>
+        </div>
+    </div>
+</body>
+</html>
