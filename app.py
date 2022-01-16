@@ -16,7 +16,7 @@ def form_example():
 
 
 @app.route('/graph')
-def aboba():
+def graph():
     return render_template("Graph_for_group_0.html")
 
 

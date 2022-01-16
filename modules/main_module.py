@@ -69,7 +69,6 @@ def draw_graph(gr_num, info_dict, label_dict, nodes, word_num):
 
 def method_name(for_df, morph):
     df_triplets = pd.DataFrame(for_df, columns=["full_sent", "subject", "verb", "object"])
-    df_triplets.shape
     df_triplets["subj_n_f"] = df_triplets["subject"].apply(lambda x: norm_form(morph, x))
     df_triplets["obj_n_f"] = df_triplets["object"].apply(lambda x: norm_form(morph, x))
     print(df_triplets.head(5))
@@ -160,7 +159,6 @@ def tokenize_text(full_corpus):
         sentences = [sent for sent in sent_tokenize(full_corpus, language="russian")]
     except:
         import nltk
-
         nltk.download('punkt')
         sentences = [sent for corp in full_corpus for sent in sent_tokenize(corp, language="russian")]
     return sentences
