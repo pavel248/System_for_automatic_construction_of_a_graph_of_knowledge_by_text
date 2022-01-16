@@ -2,6 +2,7 @@ header_text = r"""<!doctype html>
                   <html lang="ru">
                     <head>
                     <meta charset="utf-8"/>
+                    <meta http-equiv="Cache-Control" content="no-cache">
                     <title>Interractive graph</title>
                     <style>
                       .parent > div {

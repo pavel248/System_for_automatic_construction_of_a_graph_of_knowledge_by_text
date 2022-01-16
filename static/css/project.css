@@ -23,11 +23,6 @@ li{
     list-style-type: none;
 }
 
-.clip {
-    position: absolute; 
-    left:35%; 
-    top:305px;
-}
 .sub_menu{ 
 
     display: none; 
@@ -86,6 +81,18 @@ textarea[type =text]{
     margin: 300px 25%;
       
 }
+.btn{
+    text-align: center;
+    border-radius: 25px;
+    width: 50px;
+    margin: -290px 37%;
+}
+
+.gif{
+    width:30px;
+    margin: -280px 42%;
+    display: none;
+}
 
 .main_footer{
     background-color: gray;
@@ -96,6 +103,4 @@ textarea[type =text]{
     height: 80px;
 }
 
-img:hover .sub_menu{
-    display: block;
-}
+ 

@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("input").click(function(){
+            $("img").show();
+          });
+        });
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +22,7 @@
                 <img src ="/static/images/logo.png" width ="80" heigh ="80">
             </div>
             <div class ="team_name">
-                <p>Teen Spirit</p>
+                <p>Система автоматического построения графа знаний по тексту</p>
             </div>          
             <div class = "main_menu">
                 <img src ="/static/images/menu.png" width ="60" heigh ="60">
@@ -33,8 +41,9 @@
         </div>
         <div class="container">
             <form class="text_form" action="" method="post">
-                <textarea type="text" name ="user_text" placeholder="Вставьте ваш текст сюда"></textarea>         
-                <input type="submit" value="Submit">
+                <textarea type="text" name ="user_text" placeholder="Вставьте ваш текст сюда"></textarea>    
+                <p class="btn"><input type="submit"  value=" Отправить "></p>
+                <img class ="gif" src ="/static/images/loading.gif">
             </form>           
                         
         </div>
